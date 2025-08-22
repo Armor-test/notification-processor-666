@@ -1,0 +1,35 @@
+# CODEOWNERS file for notification-processor-666
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-database @Armor-test/team-notifications @Armor-test/dept-identity
+
+# Directory ownership
+/views/ @Armor-test/grp-api @Armor-test/dept-logging @Armor-test/dept-data
+/spec/ @Armor-test/grp-payments @Armor-test/unit-test
+/lib/ @Armor-test/grp-search @Armor-test/dept-billing @Armor-test/dept-notifications
+/internal/ @Armor-test/dept-identity @Armor-test/team-logging
+/controllers/ @Armor-test/squad-ux @Armor-test/dept-logging
+/modules/ @Armor-test/squad-product @Armor-test/dept-data
+/web/ @Armor-test/squad-payments @Armor-test/team-governance @Armor-test/dept-billing
+/third_party/ @Armor-test/squad-ml @Armor-test/squad-mobile
+/public/ @Armor-test/dept-ui @Armor-test/dept-billing @Armor-test/grp-api
+/deploy/ @Armor-test/team-notifications @Armor-test/squad-frontend
+
+# File type ownership
+*.go @Armor-test/squad-ux @Armor-test/grp-reporting
+*.sql @Armor-test/dept-security @Armor-test/squad-tooling
+*.scss @Armor-test/dept-reporting @Armor-test/squad-performance
+*.graphql @Armor-test/grp-search @Armor-test/squad-product @Armor-test/grp-integration
+*.xml @Armor-test/squad-product @Armor-test/dept-notifications @Armor-test/squad-qa
+*.properties @Armor-test/squad-search @Armor-test/unit-governance
+*.tf @Armor-test/grp-ui @Armor-test/squad-reporting
+*.c @Armor-test/dept-api @Armor-test/team-core @Armor-test/dept-test
+*.cpp @Armor-test/squad-reporting @Armor-test/grp-integration
+*.h @Armor-test/team-core @Armor-test/grp-storage @Armor-test/squad-api
+*.cs @Armor-test/dept-security @Armor-test/grp-reporting
+*.html @Armor-test/team-reporting @Armor-test/team-logging
+
+# Security and special files
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+package.json @Armor-test/dependency-team @Armor-test/security
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
